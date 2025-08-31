@@ -2,8 +2,14 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders component library title', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const titleElement = screen.getByText(/UC Component Library/i);
+  expect(titleElement).toBeInTheDocument();
+});
+
+test('renders assignment info', () => {
+  render(<App />);
+  const assignmentElement = screen.getByText(/Assignment 13/i);
+  expect(assignmentElement).toBeInTheDocument();
 });
