@@ -1,6 +1,6 @@
 # Component Library - Assignment 13
 
-React component library with Storybook and code quality checks.
+React page with code quality checks to the build process
 
 ## Docker Instructions
 
@@ -11,7 +11,7 @@ docker build -t vanderploeg_tiffany_coding_assignment13 .
 
 2. **Run:**
 ```bash
-docker run -p 8018:8018 vanderploeg_tiffany_coding_assignment13
+docker run --name vanderploeg_tiffany_coding_assignment13 -p 8018:8018 vanderploeg_tiffany_coding_assignment13
 ```
 
 3. **Open:** http://localhost:8018
